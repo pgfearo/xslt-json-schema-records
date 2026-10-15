@@ -1,4 +1,4 @@
-# JSON Schema to record types
+# JSON Schema to record types - with XSLT 4.0
 
 XPath 4.0 JNodes let you navigate JSON (maps and arrays) with path expressions, as you would XML: `$order/customer/name`,
 `$schema//get('$ref')`, `../..`, `jkey()`. When a JNode is declared with a record type, e.g. `jnode(*, order)`, the
