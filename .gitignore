@@ -1,0 +1,4 @@
+# the report's output, e.g. from a Quick Run task's resultPath
+*-out.txt
+# VS Code settings and tasks are per user (Saxon jar paths, licences)
+.vscode/
