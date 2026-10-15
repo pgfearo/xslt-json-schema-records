@@ -1,9 +1,13 @@
 # JSON Schema to record types - with XSLT 4.0
 
-XPath 4.0 JNodes let you navigate JSON (maps and arrays) with path expressions, as you would XML: `$order/customer/name`,
-`$schema//get('$ref')`, `../..`, `jkey()`. When a JNode is declared with a record type, e.g. `jnode(*, order)`, the
+XPath 4.0 JNodes let you navigate JSON (maps and arrays) with path expressions, as you would XML: `$order/customer/name`. When a JNode is declared with a record type, e.g. `jnode(*, order)`, the
 editor knows which fields each step can reach. It checks each step, offers the field names as completions, and shows
 each field's type and documentation on hover.
+
+![Hovering on 'order' in order-report.xsl shows the record type's fields and their documentation](images/types-on-hover.png)
+
+*Hovering on `order` in `jnode(*, order)` in `order-report.xsl` shows the `order` record type, imported from
+`order-types.xsl`: its fields and their types, and each field's description from the schema.*
 
 ## Requirements
 
